@@ -667,18 +667,28 @@ footer {
 
 
 #review-container {  /* Qui cambio il nome per coerenza */
-    width: 100%;
-    height: 400px; /* Imposta l'altezza che desideri per il contenitore delle immagini */
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid #0077b6;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Altezza fissa per creare un quadrato */
+    overflow: hidden; /* Nasconde le recensioni che escono fuori */
     margin-top: 20px;  /* Aggiungi margine sopra */
     margin-bottom: 20px;  /* Aggiungi margine sotto */
-
 }
 
 .review-container {  /* Uso lo stesso nome */
     display: flex;
-    width: 300%; /* Tre immagini visibili una accanto all'altra */
+    width: 100%; /* Tre immagini visibili una accanto all'altra */
     transition: transform 1s ease-in-out; /* Aggiungi una transizione per l'effetto di scorrimento */
 }
 
