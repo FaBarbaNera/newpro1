@@ -679,39 +679,43 @@ footer {
 
 
 
-#review-container {  /* Qui cambio il nome per coerenza */
+#review-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
+    width: 90%;  /* Larghezza del contenitore */
+    max-width: 600px;  /* Larghezza massima */
+    margin: 0 auto;  /* Centra il contenitore */
     padding: 30px;
     background-color: #ffffff;
     border: 2px solid #0077b6;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    height: 400px; /* Altezza fissa per creare un quadrato */
-    overflow: hidden; /* Nasconde le recensioni che escono fuori */
+    height: 400px;  /* Altezza fissa del contenitore */
+    overflow: hidden;  /* Nasconde le parti fuori dal contenitore */
     margin-top: 20px;  /* Aggiungi margine sopra */
     margin-bottom: 20px;  /* Aggiungi margine sotto */
 }
 
-.review-container {  /* Uso lo stesso nome */
+.review-container {
     display: flex;
-    width: 100%; /* Tre immagini visibili una accanto all'altra */
-    transition: transform 1s ease-in-out; /* Aggiungi una transizione per l'effetto di scorrimento */
+    justify-content: center;  /* Centra le immagini orizzontalmente */
+    align-items: center;  /* Centra le immagini verticalmente */
+    width: 100%;  /* Usa tutta la larghezza del contenitore */
+    transition: transform 1s ease-in-out;  /* Transizione per lo scorrimento */
 }
 
 .carousel-image {
-    width: 100%; /* Ogni immagine occupa un terzo della larghezza */
-    display: none; /* Nascondi le immagini all'inizio */
+    width: 100%;  /* Ogni immagine occupa tutta la larghezza disponibile */
+    height: 100%;  /* Ogni immagine occupa tutta l'altezza disponibile */
+    object-fit: cover;  /* Mantieni il rapporto di aspetto e riempi il contenitore senza distorcere */
+    display: none;  /* Nascondi tutte le immagini inizialmente */
 }
 
 .carousel-image:first-child {
-    display: block; /* Mostra la prima immagine all'inizio */
+    display: block;  /* Mostra la prima immagine all'inizio */
 }
 
 
