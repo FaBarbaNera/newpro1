@@ -135,11 +135,11 @@ footer {
         margin-right: 10px; /* Riduci il margine destro sugli ombrelloni */
     }
     #review-container {
-        width: 95%;  /* Aumenta la larghezza del contenitore sui dispositivi mobili */
-        height: 300px;  /* Modifica l'altezza per adattarla meglio su schermi più piccoli */
-        padding: 20px;  /* Riduci un po' il padding per risparmiare spazio */
-        margin-left: 10px;
-        margin-right: 10px;
+        .review-container {
+        margin-left: 15px;  /* Aggiungi margine a sinistra */
+        margin-right: 15px; /* Aggiungi margine a destra */
+        width: 100%;  /* La larghezza del contenitore diventa il 100% */
+        padding: 20px; /* Riduci il padding per dispositivi mobili */
     }
 
     .carousel-image {
