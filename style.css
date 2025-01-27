@@ -787,69 +787,91 @@ header nav a::before {
     color: #ffcc00;  /* Colore del puntino */
 }
 
-/* Centra il contenitore del menu con Flexbox */
-/* Centra il contenitore del menu */
-/* Centra il contenitore principale del menu */
+/* Contenitore principale del menu */
 #bar-menu {
     display: flex;
-    justify-content: center;     /* Centra orizzontalmente */
-    align-items: center;         /* Centra verticalmente */
-    flex-direction: column;      /* Dispone gli elementi in colonna */
-    padding:0px;
+    flex-direction: column;     /* Dispone gli elementi in colonna */
+    justify-content: center;    /* Centra verticalmente */
+    align-items: center;        /* Centra orizzontalmente */
+    text-align: center;         /* Centra il testo */
+    padding: 20px;
     width: 100%;
-    min-height: 100vh;            /* Assicura che l'altezza del contenitore occupi tutta la schermata */
+    max-width: 900px;           /* Imposta una larghezza massima per il menu */
+    margin: 0 auto;             /* Centra il menu nella pagina */
 }
 
+/* Categoria del menu (es. Bevande, Birre) */
+.menu-category {
+    width: 100%;
+    margin-bottom: 30px;
+}
 
-/* Ogni elemento della lista (li) */
+/* Titolo di ogni categoria (Bevande, Birre...) */
+.menu-category h2 {
+    font-size: 2.5em;
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+/* Lista degli elementi del menu */
 .menu-category ul {
     list-style: none;
     padding: 0;
     width: 100%;
-    max-width: 900px;            /* Imposta una larghezza massima per la lista */
+    max-width: 800px;            /* Imposta una larghezza massima per la lista */
     margin: 0 auto;              /* Centra la lista orizzontalmente */
 }
 
 /* Elemento della lista (li) */
 .menu-category li {
-    display: block;            /* Mantiene ogni item su una riga separata */
-    text-align: center;
-    padding: 10px 0;
+    display: flex;               /* Usa flexbox per allineare descrizione e prezzo sulla stessa linea */
+    justify-content: space-between; /* Spazio tra descrizione e prezzo */
+    align-items: center;         /* Allinea verticalmente al centro */
+    padding: 15px 0;
     border-bottom: 1px solid #ccc; /* Linea sotto ogni elemento */
 }
 
-/* Nome del prodotto */
-.menu-category h3 {
+/* Titolo del prodotto (es. Acqua Liscia) */
+.menu-category li h3 {
     font-size: 1.5em;
     color: #0077b6;
-    font-weight: bold;
-    display: inline-block; /* Mantiene il titolo inline per evitare il ritorno a capo */
-    text-align:  center;
-    margin: 0px ;
-}
-
-/* Contenitore per la descrizione e il prezzo */
-.menu-category .product-info {
-    display: flex;               /* Dispone descrizione e prezzo sulla stessa riga */
-    justify-content: space-between; /* Spazio tra descrizione e prezzo */
-    align-items: center;         /* Allinea verticalmente al centro */
-    width: 100%;                 /* Occupa tutta la larghezza disponibile */
-    margin-top: 5px;             /* Distanza dal titolo */
+    margin: 0;
+    flex: 1; /* Lascia che il titolo prenda tutta la larghezza disponibile */
+    text-align: left;  /* Allinea il titolo a sinistra */
 }
 
 /* Descrizione del prodotto */
-.menu-category .product-info p {
-    font-size: 1rem;
-    text-align: left;            /* Allinea la descrizione a sinistra */
-    margin: 0;                   /* Rimuove il margine */
-    flex: 1;                     /* Fa in modo che la descrizione occupi tutto lo spazio disponibile */
+.menu-category li p {
+    font-size: 1em;
+    text-align: left;   /* Allinea la descrizione a sinistra */
+    margin: 0;
+    flex: 2;            /* Fa in modo che la descrizione prenda più spazio */
 }
 
 /* Prezzo del prodotto */
-.menu-category .product-info .price {
-    font-size: 1.2rem;
-    text-align: right;           /* Allinea il prezzo a destra */
+.menu-category li .price {
+    font-size: 1.2em;
+    font-weight: bold;
     color: #0077b6;
-    font-weight: bold;           /* Grassetto per il prezzo */
+    text-align: right;  /* Allinea il prezzo a destra */
 }
 
+/* Media queries per dispositivi più piccoli */
+@media (max-width: 768px) {
+    /* Rende il menu più compatto su schermi piccoli */
+    .menu-category h2 {
+        font-size: 2em;
+    }
+
+    .menu-category li h3 {
+        font-size: 1.2em;
+    }
+
+    .menu-category li p {
+        font-size: 0.9em;
+    }
+
+    .menu-category li .price {
+        font-size: 1.1em;
+    }
+}
