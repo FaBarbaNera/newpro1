@@ -136,10 +136,11 @@ footer {
     }
     #review-container {
         .review-container {
-        margin-left: 15px;  /* Aggiungi margine a sinistra */
-        margin-right: 15px; /* Aggiungi margine a destra */
-        width: 100%;  /* La larghezza del contenitore diventa il 100% */
-        padding: 20px; /* Riduci il padding per dispositivi mobili */
+            margin-left: 15px;  /* Aggiungi margine a sinistra */
+            margin-right: 15px; /* Aggiungi margine a destra */
+            width: 100%;  /* La larghezza del contenitore diventa il 100% */
+            padding: 20px; /* Riduci il padding per dispositivi mobili */
+        }
     }
 
     .carousel-image {
@@ -167,6 +168,7 @@ footer {
         width: 100%;       /* Assicura che la lista occupi tutta la larghezza */
     }
 }
+
 
 
 
@@ -421,7 +423,6 @@ footer {
 
 
 
-
 /* Sezione Recensioni */
 #recensioni {
     text-align: center;
@@ -526,6 +527,7 @@ footer {
 .review-button:focus {
     outline: none; /* Rimuove la linea blu di focus */
 }
+
 
 
 
@@ -895,4 +897,20 @@ header nav a::before {
         font-size: 1.1em;       /* Dimensione prezzo per mobile */
         margin-top: 5px;        /* Distanza tra il prezzo e la linea */
     }
+}
+@media (orientation: landscape) {
+    /* Le tue regole CSS specifiche per la modalità landscape */
+    .menu-category {
+        width: 60%; /* Ad esempio, puoi aumentare la larghezza in landscape */
+    }
+
+    .page {
+        padding: 20px;
+    }
+
+    .page-container {
+        max-width: 100%;
+    }
+
+    /* Puoi aggiungere altre regole che si applicano solo in modalità landscape */
 }
