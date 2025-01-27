@@ -160,7 +160,12 @@ footer {
     .menu-category li {
         padding: 10px 0;           /* Riduce il padding per ciascun elemento */
     }
+    .menu-category ul {
+        max-width: none;   /* Rimuove la larghezza massima */
+        width: 100%;       /* Assicura che la lista occupi tutta la larghezza */
+    }
 }
+
 
 
 
@@ -788,7 +793,7 @@ header nav a::before {
     justify-content: center;     /* Centra orizzontalmente */
     align-items: center;         /* Centra verticalmente */
     flex-direction: column;      /* Dispone gli elementi in colonna */
-    padding: 50px;
+    padding:0px;
     width: 100%;
     min-height: 100vh;            /* Assicura che l'altezza del contenitore occupi tutta la schermata */
 }
