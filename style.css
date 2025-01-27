@@ -125,6 +125,15 @@ footer {
         padding: 12px 25px;
         font-size: 1.2em;
     }
+#ombrelloni-intro {
+        margin-left: 10px;  /* Riduci il margine sinistro sui dispositivi mobili */
+        margin-right: 10px; /* Riduci il margine destro sui dispositivi mobili */
+    }
+
+    .ombrellone {
+        margin-left: 10px;  /* Riduci il margine sinistro sugli ombrelloni */
+        margin-right: 10px; /* Riduci il margine destro sugli ombrelloni */
+    }
 }
 
 
