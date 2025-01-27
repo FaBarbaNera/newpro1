@@ -824,106 +824,39 @@ header nav a::before {
 /* Elemento della lista (li) */
 .menu-category li {
     display: flex;
-    flex-direction: column; /* Cambiamo la disposizione in colonna */
-    justify-content: center;
-    align-items: flex-start;
-    padding: 15px 0;
-    border-bottom: 1px solid #ccc;
-}
-
-/* Titolo del prodotto (es. Acqua Liscia) */
-.menu-category li h3 {
-    font-size: 1.5em;
-    color: #0077b6;
-    margin: 0;
-    text-align: left;
-    flex: 1;
-}
-
-/* Descrizione del prodotto sotto il titolo */
-.menu-category li p {
-    font-size: 1em;
-    text-align: left;
-    margin: 0;
-    flex: 2;
-}
-
-/* Prezzo del prodotto a destra */
-.menu-category li .price {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #0077b6;
-    text-align: right;
-    margin-top: 5px;
-}
-
-
-/* Contenitore principale del menu */
-#bar-menu {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Inizialmente disposizione in colonna */
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* Categoria del menu (es. Bevande, Birre) */
-.menu-category {
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-/* Titolo della categoria (Bevande, Birre...) */
-.menu-category h2 {
-    font-size: 2.5em;
-    color: #0077b6;
-    margin-bottom: 15px;
-}
-
-/* Lista degli elementi del menu */
-.menu-category ul {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Elemento della lista (li) */
-.menu-category li {
-    display: flex;
-    flex-direction: row; /* Default: in riga */
-    justify-content: space-between;
-    align-items: center;
     padding: 15px 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #0077b6; /* Linea azzurra sotto ogni prodotto */
 }
 
-/* Titolo del prodotto (es. Acqua Liscia) */
+/* Nome del prodotto */
 .menu-category li h3 {
     font-size: 1.5em;
-    color: #0077b6;
+    color: #ffcc00; /* Giallo */
     margin: 0;
-    flex: 1;
+    text-align: center; /* Centra il testo */
+    width: 100%; /* Rende il testo centrale su tutta la larghezza */
 }
 
 /* Descrizione del prodotto */
-.menu-category li p {
+.menu-category li p.description {
     font-size: 1em;
-    text-align: left;
-    margin: 0;
-    flex: 2;
+    color: #333; /* Colore normale per la descrizione */
+    margin: 5px 0;  /* Distanza tra descrizione e il resto */
+    text-align: center; /* Centra il testo */
+    width: 100%; /* Rende la descrizione centrale su tutta la larghezza */
 }
 
 /* Prezzo del prodotto */
 .menu-category li .price {
     font-size: 1.2em;
+    color: #d32f2f; /* Rosso */
     font-weight: bold;
-    color: #0077b6;
-    text-align: right;
+    text-align: center; /* Centra il prezzo */
+    margin: 5px 0;  /* Distanza tra il prezzo e la linea sotto */
+    width: 100%; /* Rende il prezzo centrale su tutta la larghezza */
 }
 
 /* Media query per dispositivi mobili */
@@ -935,32 +868,31 @@ header nav a::before {
 
     /* Lista degli elementi del menu */
     .menu-category ul {
-        max-width: 100%; /* Assicurati che la lista occupi tutta la larghezza */
-        padding: 10px;
+        max-width: 100%; /* La lista occupa tutta la larghezza disponibile */
     }
 
     /* Elemento della lista (li) */
     .menu-category li {
-        flex-direction: column; /* Cambia da riga a colonna su schermi piccoli */
+        flex-direction: column; /* In colonna su smartphone */
         text-align: center;      /* Centra tutto il testo */
-        margin-bottom: 15px;     /* Distanza tra gli elementi */
+        margin-bottom: 20px;     /* Distanza tra gli elementi */
     }
 
-    /* Titolo del prodotto */
+    /* Nome del prodotto */
     .menu-category li h3 {
-        font-size: 1.4em;       /* Riduci la dimensione del titolo */
+        font-size: 1.4em;       /* Riduci la dimensione del nome prodotto su schermo piccolo */
         margin-bottom: 10px;    /* Distanza tra il titolo e la descrizione */
     }
 
     /* Descrizione del prodotto */
-    .menu-category li p {
-        font-size: 0.9em;       /* Riduci la dimensione della descrizione */
+    .menu-category li .description {
+        font-size: 1em;         /* Dimensione descrizione per mobile */
         margin-bottom: 10px;    /* Distanza tra la descrizione e il prezzo */
     }
 
     /* Prezzo del prodotto */
     .menu-category li .price {
-        font-size: 1.1em;       /* Riduci la dimensione del prezzo */
-        margin-top: 5px;        /* Spazio tra il prezzo e la descrizione */
+        font-size: 1.1em;       /* Dimensione prezzo per mobile */
+        margin-top: 5px;        /* Distanza tra il prezzo e la linea */
     }
 }
