@@ -42,6 +42,8 @@
                 <img src="images/pesce1.jpg" alt="Pesce fresco" class="carousel-image" id="carousel-img-1">
                 <img src="images/pesce2.jpg" alt="Pesce grigliato" class="carousel-image" id="carousel-img-2">
                 <img src="images/pesce3.jpg" alt="Piatti tipici" class="carousel-image" id="carousel-img-3">
+                <img src="images/pesce4.jpg" alt="Piatti tipici" class="carousel-image" id="carousel-img-4">
+                <img src="images/pesce5.jpg" alt="Piatti tipici" class="carousel-image" id="carousel-img-5">
             </div>
         </section>
 
@@ -69,3 +71,26 @@
     <script src="app.js"></script>
 </body>
 </html>
+<script>
+    let currentIndex = 0; // L'indice dell'immagine visibile
+    const images = document.querySelectorAll('.carousel-image'); // Seleziona tutte le immagini del carosello
+    const totalImages = images.length; // Numero totale di immagini
+
+    // Funzione per cambiare l'immagine visibile
+    function showNextImage() {
+        // Nascondi l'immagine corrente
+        images[currentIndex].style.display = 'none';
+
+        // Incrementa l'indice per mostrare la prossima immagine
+        currentIndex = (currentIndex + 1) % totalImages; // Torna alla prima immagine se arriva all'ultima
+
+        // Mostra la prossima immagine
+        images[currentIndex].style.display = 'block';
+    }
+
+    // Imposta l'intervallo per cambiare immagine ogni 5 secondi (5000 ms)
+    setInterval(showNextImage, 5000);
+
+    // Mostra la prima immagine all'inizio
+    showNextImage();
+</script>
