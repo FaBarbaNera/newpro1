@@ -706,7 +706,7 @@ footer {
 }
 
 .carousel-image {
-    width: 33.33%; /* Ogni immagine occupa un terzo della larghezza */
+    width: 50%; /* Ogni immagine occupa un terzo della larghezza */
     display: none; /* Nascondi le immagini all'inizio */
 }
 
@@ -736,3 +736,4 @@ header nav a::before {
     font-size: 2em;  /* Imposta la dimensione del puntino */
     color: #ffcc00;  /* Colore del puntino */
 }
+
