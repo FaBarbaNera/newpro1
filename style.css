@@ -134,6 +134,16 @@ footer {
         margin-left: 10px;  /* Riduci il margine sinistro sugli ombrelloni */
         margin-right: 10px; /* Riduci il margine destro sugli ombrelloni */
     }
+    #review-container {
+        width: 95%;  /* Aumenta la larghezza del contenitore sui dispositivi mobili */
+        height: 300px;  /* Modifica l'altezza per adattarla meglio su schermi più piccoli */
+        padding: 20px;  /* Riduci un po' il padding per risparmiare spazio */
+    }
+
+    .carousel-image {
+        width: 100%;  /* Le immagini si adattano alla larghezza del contenitore */
+        height: 100%;  /* Le immagini occupano tutta l'altezza disponibile */
+    }
 }
 
 
