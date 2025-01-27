@@ -752,56 +752,82 @@ header nav a::before {
     color: #ffcc00;  /* Colore del puntino */
 }
 
-/* Centra il contenitore del menu */
+/* Centra il contenitore del menu con Flexbox */
 #bar-menu {
-    display: flex;
-    justify-content: center;  /* Allinea al centro orizzontalmente */
-    align-items: center;      /* Allinea al centro verticalmente */
-    flex-direction: column;   /* Ordina gli elementi verticalmente */
-    padding: 20px;            /* Aggiunge un po' di padding */
-    width: 100%;              /* Occupa tutta la larghezza */
+    display: flex;                     /* Attiva Flexbox */
+    justify-content: center;           /* Allinea orizzontalmente al centro */
+    align-items: center;               /* Allinea verticalmente al centro */
+    flex-direction: column;            /* Dispone gli elementi in verticale */
+    padding: 20px;                     /* Spazio intorno al contenitore */
+    width: 100%;                       /* Occupa tutta la larghezza disponibile */
+    height: 100%;                      /* Facoltativo: può essere utile per centrare verticalmente */
 }
 
-/* Allinea il testo a centro e regola la larghezza del titolo */
-.menu-category h3 {
-    font-size: 1.8em;            /* Dimensione del testo */
-    color: #0077b6;              /* Colore blu */
-    font-weight: bold;           /* Grassetto */
-    text-align: center;          /* Centra il testo orizzontalmente */
-    width: 80%;                  /* Imposta la larghezza al 80% della larghezza del contenitore */
-    max-width: 600px;            /* La larghezza massima per non farlo diventare troppo largo */
-    margin: 10px auto;           /* Aggiunge un po' di spazio sopra e sotto il titolo, e centra orizzontalmente */
-    line-height: 1.4;            /* Aumenta la spaziatura tra le righe (utile per titoli più lunghi) */
+/* Stile per ogni categoria del menu */
+.menu-category {
+    display: flex;                     /* Attiva Flexbox per la categoria */
+    flex-direction: column;            /* Dispone gli elementi in verticale */
+    justify-content: flex-start;       /* Allinea gli elementi all'inizio */
+    align-items: center;               /* Allinea gli elementi al centro */
+    width: 100%;                       /* Occupa tutta la larghezza disponibile */
+    max-width: 800px;                  /* Imposta una larghezza massima per evitare che diventi troppo largo */
 }
 
-/* Stile per il contenitore della lista (aggiustato per essere responsive) */
-.menu-category ul {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    max-width: 800px;            /* Imposta una larghezza massima per la lista */
-    margin: 0 auto;              /* Centra la lista orizzontalmente */
-}
-
-/* Ogni elemento della lista (li) */
-.menu-category li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc; /* Linea sotto ogni elemento */
-}
-
-/* Allineare i prezzi a destra */
-.menu-category .price {
-    text-align: right;
-    font-weight: bold;
-    color: #0077b6;
-    margin-top: 5px;
-}
+/* Stile per il titolo della categoria (h2) */
 .menu-category h2 {
-    font-size: 2.5em;
-    color: #0077b6;
-    text-align: center;
+    font-size: 2.5em;                  /* Dimensione più grande per il titolo */
+    color: #0077b6;                    /* Colore blu */
+    text-align: center;                /* Centra il titolo */
+    width: 100%;                       /* Occupa tutta la larghezza del contenitore */
 }
+
+/* Stile per il titolo degli articoli del menu (h3) */
+.menu-category h3 {
+    font-size: 3vw;                    /* Adatta la dimensione del font alla larghezza della finestra */
+    color: #0077b6;                    /* Colore blu */
+    font-weight: bold;                 /* Grassetto */
+    text-align: center;                /* Centra il testo */
+    width: 100%;                       /* Occupa tutta la larghezza disponibile */
+    max-width: 600px;                  /* Limita la larghezza massima per evitare che diventi troppo largo */
+    margin: 10px 0;                    /* Distanza tra i titoli */
+    line-height: 1.4;                  /* Maggiore spaziatura tra le righe per titoli lunghi */
+}
+
+/* Stile per la lista degli articoli (ul) */
+.menu-category ul {
+    list-style: none;                  /* Rimuove i puntini della lista */
+    padding: 0;                        /* Rimuove il padding di default */
+    width: 100%;                       /* Occupa tutta la larghezza disponibile */
+    display: flex;                     /* Attiva Flexbox */
+    flex-direction: column;            /* Dispone gli elementi della lista in verticale */
+    align-items: center;               /* Allinea gli articoli al centro */
+    margin: 0;                          /* Rimuove i margini */
+}
+
+/* Stile per ogni elemento della lista (li) */
+.menu-category li {
+    padding: 10px 0;                   /* Spazio tra gli elementi */
+    border-bottom: 1px solid #ccc;    /* Linea di separazione */
+    width: 100%;                       /* Occupa tutta la larghezza disponibile */
+    display: flex;                     /* Attiva Flexbox per ogni elemento */
+    justify-content: space-between;    /* Distanza tra il nome dell'articolo e il prezzo */
+    align-items: center;               /* Allinea verticalmente */
+}
+
+/* Stile per il prezzo */
+.menu-category .price {
+    text-align: right;                 /* Allinea il prezzo a destra */
+    font-weight: bold;                 /* Grassetto */
+    color: #0077b6;                    /* Colore blu */
+    margin-top: 5px;                   /* Distanza dal testo */
+}
+
+/* Stile per il testo descrittivo */
 .menu-category p {
-    text-align: center;  /* Centra il testo delle descrizioni */
-    margin: 10px 0;  /* Distanza tra le righe */
+    text-align: center;                /* Centra il testo */
+    font-size: 1.2rem;                 /* Riduce la dimensione del testo */
+    line-height: 1.5;                  /* Maggiore spaziatura tra le righe */
+    width: 80%;                         /* Imposta la larghezza del paragrafo al 80% */
+    max-width: 600px;                  /* Imposta una larghezza massima per evitare che diventi troppo largo */
+    margin: 10px 0;                    /* Spazio sopra e sotto il paragrafo */
 }
