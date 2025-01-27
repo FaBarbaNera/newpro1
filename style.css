@@ -706,7 +706,7 @@ footer {
 }
 
 .carousel-image {
-    width: 50%; /* Ogni immagine occupa un terzo della larghezza */
+    width: 100%; /* Ogni immagine occupa un terzo della larghezza */
     display: none; /* Nascondi le immagini all'inizio */
 }
 
