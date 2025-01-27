@@ -144,21 +144,37 @@ footer {
         width: 100%;  /* Le immagini si adattano alla larghezza del contenitore */
         height: 100%;  /* Le immagini occupano tutta l'altezza disponibile */
     }
-     /* Ridurre la dimensione del testo delle descrizioni e dei titoli */
-     .menu-category h3 {
-        font-size: 1.4em;          /* Riduce la dimensione del titolo */
+#bar-menu {
+        padding: 10px;   /* Riduce il padding sui dispositivi mobili */
     }
 
-    .menu-category .product-info p {
-        font-size: 0.9rem;         /* Riduce la dimensione della descrizione */
+    .menu-category h3 {
+        font-size: 1.4em;   /* Riduce la dimensione del titolo per smartphone */
+        margin-bottom: 8px;  /* Riduce il margine inferiore per avere meno spazio */
     }
 
-    .menu-category .product-info .price {
-        font-size: 1.1rem;         /* Riduce il prezzo */
+    .menu-category p {
+        font-size: 0.9em;    /* Riduce la dimensione del testo della descrizione */
+        margin: 8px 0;       /* Riduce il margine per il testo */
+    }
+
+    .menu-category .price {
+        font-size: 1.2em;    /* Riduce la dimensione del prezzo */
     }
 
     .menu-category li {
-        padding: 10px 0;           /* Riduce il padding per ciascun elemento */
+        padding: 8px 0;      /* Riduce il padding tra gli elementi della lista */
+    }
+}
+
+/* Media query per schermi più piccoli (smartphone in modalità portrait) */
+@media (max-width: 480px) {
+    .menu-category h3 {
+        font-size: 1.2em;   /* Ulteriore riduzione per schermi più piccoli */
+    }
+
+    .menu-category p {
+        font-size: 0.8em;    /* Ancora più piccolo per le descrizioni */
     }
 }
 
