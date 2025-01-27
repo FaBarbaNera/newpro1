@@ -144,6 +144,46 @@ footer {
         width: 100%;  /* Le immagini si adattano alla larghezza del contenitore */
         height: 100%;  /* Le immagini occupano tutta l'altezza disponibile */
     }
+/* Centra e ridimensiona il contenitore principale */
+    #bar-menu {
+        padding: 10px;               /* Riduce il padding per adattarsi meglio agli schermi piccoli */
+        width: 100%;                 /* Rende il contenitore a larghezza completa */
+    }
+
+    /* Titolo della categoria */
+    .menu-category h2 {
+        font-size: 2em;              /* Riduce la dimensione del titolo principale */
+    }
+
+    /* Titoli degli articoli (h3) */
+    .menu-category h3 {
+        font-size: 4vw;              /* Imposta la dimensione dinamica del font in base alla larghezza */
+    }
+
+    /* Descrizione degli articoli (p) */
+    .menu-category p {
+        font-size: 1.1rem;           /* Riduce la dimensione del testo descrittivo */
+        width: 90%;                  /* Imposta una larghezza maggiore per le descrizioni */
+    }
+
+    /* Lista degli articoli (ul) */
+    .menu-category ul {
+        max-width: 100%;             /* Imposta la lista a larghezza piena */
+        padding: 0 10px;             /* Aggiunge un po' di padding laterale per schermi piccoli */
+    }
+
+    /* Ogni elemento della lista (li) */
+    .menu-category li {
+        padding: 8px 0;              /* Riduce il padding per adattarsi agli schermi piccoli */
+        font-size: 1rem;             /* Riduce la dimensione del testo per ogni voce */
+    }
+
+    /* Prezzo degli articoli */
+    .menu-category .price {
+        font-size: 1rem;             /* Riduce la dimensione del font del prezzo */
+        text-align: center;          /* Allinea il prezzo al centro per gli schermi piccoli */
+        margin-top: 10px;            /* Aggiunge un po' di spazio sopra il prezzo */
+    }
 }
 
 
