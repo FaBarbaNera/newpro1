@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordina dall'Ombrellone - Lido Barbanera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menù</a></li>
+                <li><a href="ordina.html">Ordina dall'Ombrellone</a></li>
+                <li><a href="ombrelloni.html">Ombrelloni</a></li>
+                <li><a href="recensioni.html">Recensioni</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="order-intro">
+                    <!-- Logo sopra il titolo -->
+        <img src="images/logo.PNG" alt="Logo Lido Barbanera" id="logo">
+
+
+            <h1>Ordina dal Tuo Ombrellone!</h1>
+            <p>Scopri le nostre bevande fresche e ordina comodamente dal tuo ombrellone.</p>
+        </section>
+
+        <section id="bar-menu">
+            <div class="menu-category">
+                <h2>Bevande</h2>
+                <ul>
+                    <li>
+                        <h3>Cocktail al Mojito</h3>
+                        <p>Rum bianco, menta fresca, zucchero di canna e lime</p>
+                        <p class="price">€8.00</p>
+                    </li>
+                    <li>
+                        <h3>Spritz Aperol</h3>
+                        <p>Aperol, prosecco e soda</p>
+                        <p class="price">€6.00</p>
+                    </li>
+                    <li>
+                        <h3>Frullato Tropicale</h3>
+                        <p>Succo di mango, ananas e cocco</p>
+                        <p class="price">€5.00</p>
+                    </li>
+                    <li>
+                        <h3>Acqua Frizzante</h3>
+                        <p>Acqua minerale frizzante, perfetta per rinfrescarsi</p>
+                        <p class="price">€2.00</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="order-details">
+            <label for="ombrellone-number">Numero Ombrellone:</label>
+            <input type="number" id="ombrellone-number" placeholder="Es. 5" min="1" required>
+            <a id="whatsapp-button" href="#" target="_blank" class="cta-btn">
+                Ordina su WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lido Barbanera | Tutti i diritti riservati</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        // Aggiungi l'evento per aggiornare il link WhatsApp con il numero ombrellone
+        const whatsappButton = document.getElementById('whatsapp-button');
+        const ombrelloneInput = document.getElementById('ombrellone-number');
+
+        ombrelloneInput.addEventListener('input', function() {
+            const ombrelloneNumber = ombrelloneInput.value;
+            if (ombrelloneNumber) {
+                // Crea il link WhatsApp con il numero dell'ombrellone
+                const whatsappUrl = `https://wa.me/393207408549?text=Vorrei%20ordinare!%20sono%20l'ombrellone%20numero%20${ombrelloneNumber}`;
+                whatsappButton.setAttribute('href', whatsappUrl);
+            }
+        });
+    </script>
+</body>
+</html>

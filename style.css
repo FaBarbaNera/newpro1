@@ -1,0 +1,692 @@
+/* RESET STILI DI BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo della pagina */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-color: #f0f8ff; /* Azzurro chiaro simile al cielo */
+    color: #0077b6;
+}
+
+/* Header */
+header {
+    background-color: #0077b6; /* Blu mare */
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ffcc00; /* Giallo sabbia per effetto hover */
+}
+
+/* Sezione principale - Intro */
+#intro {
+    background-color: #00b4d8; /* Turchese */
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    border-bottom: 5px solid #0077b6; /* Blu per separare */
+}
+
+#intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #ffcc00; /* Giallo sabbia */
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 25px;
+}
+
+.cta-btn:hover {
+    background-color: #ff9900; /* Giallo più scuro */
+}
+
+/* Sezione Features */
+#features {
+    background-color: #ffffff; /* Sfondo bianco per contrasto */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #0077b6; /* Blu mare */
+}
+
+.feature {
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.8em;
+    color: #0077b6;
+}
+
+.feature p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #intro h1 {
+        font-size: 2.5em;
+    }
+
+    #features h2 {
+        font-size: 2em;
+    }
+
+    .cta-btn {
+        padding: 12px 25px;
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+/* Stili per il menù */
+#menu-intro h1 {
+    font-size: 2.5rem;
+    color: #0077b6; /* Assumendo che il colore scuro sia quello desiderato */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.menu-category {
+    width: 30%;
+    margin-bottom: 30px;
+    margin-left: 20px;  /* Margine sinistro */
+    margin-right: 20px;  /* Margine destro */
+}
+
+
+.menu-category {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.menu-category h2 {
+    font-size: 2.5em;
+    color: #0077b6; /* Blu mare */
+    margin-bottom: 20px;
+}
+
+.menu-category ul {
+    list-style: none;
+}
+
+.menu-category li {
+    margin-bottom: 20px;
+}
+
+.menu-category h3 {
+    font-size: 1.8em;
+    color: #0077b6;
+}
+
+.menu-category p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.price {
+    font-weight: bold;
+    color: #ffcc00; /* Giallo sabbia */
+    font-size: 1.2em;
+}
+
+#order-now {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#order-now .cta-btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 25px;
+}
+
+#order-now .cta-btn:hover {
+    background-color: #ff9900;
+}
+/* Modifica al pulsante (cta-btn) per abbassarlo */
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px; /* Spaziatura interna */
+    background-color: #ffcc00; /* Colore di sfondo blu */
+    color: #333; /* Colore del testo */
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 30px; /* Aggiungi questo per abbassare il bottone */
+}
+
+.cta-btn:hover {
+    background-color: #0099cc; /* Colore di sfondo quando il mouse passa sopra */
+}
+#menu-intro {
+    padding-top: 50px; /* Spazio extra sopra il contenuto */
+    text-align: center;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f8db01;
+    color: rgb(243, 0, 0);
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 30px; /* Abbassa il bottone ulteriormente */
+}
+
+.cta-btn:hover {
+    background-color: #0099cc;
+}
+
+
+
+
+
+
+/* Sezione Ordina */
+#order-details {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#order-details input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 2px solid #0077b6;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#whatsapp-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #25d366; /* Colore di WhatsApp */
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#whatsapp-button:hover {
+    background-color: #128c7e; /* Colore WhatsApp scuro */
+}
+#order-intro {
+    padding-top: 50px; /* Spazio extra sopra il contenuto */
+    text-align: center;
+}
+
+#order-intro h1 {
+    font-size: 2.5rem; /* Puoi mantenere la stessa dimensione del titolo */
+    color: #0077b6; /* Colore blu mare, come in #menu-intro */
+    font-family: 'Roboto', sans-serif; /* Stessa font */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f8db01; /* Giallo sabbia */
+    color: rgb(243, 0, 0); /* Colore rosso */
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 30px; /* Abbassa il pulsante come in #menu-intro */
+}
+
+.cta-btn:hover {
+    background-color: #0099cc; /* Cambia quando il mouse passa sopra */
+}
+
+
+
+
+
+
+
+/* Sezione Ombrelloni */
+#ombrelloni-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#ombrelloni-intro h1 {
+    font-size: 2.5em;
+    color: #0077b6; /* Blu mare */
+}
+
+#ombrelloni-types {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.ombrellone {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #0077b6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ombrellone:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ombrellone h2 {
+    font-size: 2em;
+    color: #0077b6;
+}
+
+.ombrellone p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Sezione Info Personale */
+#info-personale {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#info-personale p {
+    font-size: 1.2em;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+
+
+
+/* Sezione Recensioni */
+#recensioni {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#recensioni h1 {
+    font-size: 2.5em;
+    color: #0077b6; /* Blu mare */
+}
+
+/* Contenitore delle recensioni */
+.review-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid #0077b6;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Altezza fissa per creare un quadrato */
+    overflow: hidden; /* Nasconde le recensioni che escono fuori */
+}
+
+/* Ogni recensione */
+.review {
+    display: none; /* Nascondi le recensioni inizialmente */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    border: 1px solid #0077b6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.stars {
+    font-size: 1.5em;
+    color: gold;
+    margin: 10px 0;
+}
+
+.review-author {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0077b6;
+}
+
+/* Testo per altre recensioni centrato */
+.more-reviews {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #0077b6;
+}
+
+.more-reviews a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.more-reviews a:hover {
+    text-decoration: underline;
+}
+
+/* Stili per il pulsante "Vedi altre recensioni" */
+.review-button {
+    background-color: #ff8c00; /* Arancione caldo */
+    color: white; /* Colore del testo bianco */
+    border: none; /* Nessun bordo */
+    padding: 15px 30px; /* Spaziatura intorno al testo */
+    font-size: 16px; /* Dimensione del testo */
+    font-weight: bold; /* Testo in grassetto */
+    border-radius: 8px; /* Angoli arrotondati */
+    cursor: pointer; /* Cursore a mano quando si passa sopra */
+    transition: all 0.3s ease; /* Transizione morbida per gli effetti */
+    margin-top: 20px; /* Distanza sopra il pulsante */
+}
+
+.review-button:hover {
+    background-color: #e67e00; /* Cambia colore quando il mouse passa sopra */
+    transform: translateY(-2px); /* Effetto sollevamento del pulsante */
+}
+
+.review-button:active {
+    background-color: #d46e00; /* Cambia colore quando cliccato */
+    transform: translateY(1px); /* Effetto abbassamento del pulsante */
+}
+
+.review-button:focus {
+    outline: none; /* Rimuove la linea blu di focus */
+}
+
+
+
+
+
+/* Sezione Contatti */
+#contatti {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#contatti h1 {
+    font-size: 2.5em;
+    color: #0077b6; /* Blu mare */
+    margin-bottom: 30px;
+}
+
+/* Contenitore per i pulsanti di contatto */
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stile per ogni pulsante */
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+    width: 250px;
+}
+
+.contact-btn i {
+    margin-right: 10px; /* Spazio tra l'icona e il testo */
+}
+
+/* Colori specifici per ogni tasto */
+.phone {
+    background-color: #34b7f1; /* Colore blu per la chiamata */
+}
+
+.phone:hover {
+    background-color: #1d8dba;
+}
+
+.facebook {
+    background-color: #3b5998; /* Colore blu di Facebook */
+}
+
+.facebook:hover {
+    background-color: #2d4373;
+}
+
+.instagram {
+    background-color: #e4405f; /* Colore rosso di Instagram */
+}
+
+.instagram:hover {
+    background-color: #c13584;
+}
+
+.maps {
+    background-color: #4285f4; /* Colore blu di Google Maps */
+}
+
+.maps:hover {
+    background-color: #357ae8;
+}
+
+.google {
+    background-color: #db4437; /* Colore rosso di Google */
+}
+
+.google:hover {
+    background-color: #c1351d;
+}
+
+/* Hover generico per i pulsanti */
+.contact-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stile per il testo di introduzione */
+#intro h1 {
+    font-size: 2.8em;
+    color: #c2d11b; /* Blu mare */
+    text-align: center;
+    margin-bottom: 20px; /* Spazio sotto il titolo */
+}
+
+#intro p {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Stile per il bottone */
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff9900;
+}
+
+
+
+
+
+/* Stili generali per il logo */
+#logo {
+    display: block;
+    margin: 0 auto 20px auto;  /* Centra l'immagine sopra il titolo con uno spazio sotto */
+    max-width: 200px;  /* Imposta una larghezza massima */
+}
+
+/* Sezione intro */
+#intro .logo img,
+#order-intro img#logo,
+#menu-intro img#logo,
+#ombrelloni-intro img#logo,
+#recensioni-intro img#logo,
+#contatti-intro img#logo {
+    display: block;
+    margin: 0 auto 20px auto;  /* Centra l'immagine sopra il titolo con spazio sotto */
+    max-width: 200px;  /* Imposta una larghezza massima */
+}
+
+/* Sezione Intro */
+#intro {
+    padding-top: 50px; /* Spazio extra sopra il contenuto */
+    text-align: center;
+}
+/* Sezione menu */
+#menu {
+    padding-top: 50px; /* Spazio extra sopra il contenuto */
+    text-align: center;
+}
+
+/* Sezione Ordine */
+#order-intro {
+    padding-top: 50px; /* Spazio extra sopra il contenuto */
+    text-align: center;
+}
+
+/* Sezione Ombrelloni */
+#ombrelloni-intro {
+    padding-top: 50px; /* Spazio extra sopra il contenuto */
+    text-align: center;
+}
+
+/* Sezione Recensioni */
+#recensioni-intro {
+    padding-top: 50px; /* Spazio extra sopra il contenuto */
+    text-align: center;
+}
+
+/* Sezione Contatti */
+#contatti-intro {
+    padding-top: 50px; /* Spazio extra sopra il contenuto */
+    text-align: center;
+}
+
+
+
+#review-container {  /* Qui cambio il nome per coerenza */
+    width: 100%;
+    height: 400px; /* Imposta l'altezza che desideri per il contenitore delle immagini */
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;  /* Aggiungi margine sopra */
+    margin-bottom: 20px;  /* Aggiungi margine sotto */
+
+}
+
+.review-container {  /* Uso lo stesso nome */
+    display: flex;
+    width: 300%; /* Tre immagini visibili una accanto all'altra */
+    transition: transform 1s ease-in-out; /* Aggiungi una transizione per l'effetto di scorrimento */
+}
+
+.carousel-image {
+    width: 33.33%; /* Ogni immagine occupa un terzo della larghezza */
+    display: none; /* Nascondi le immagini all'inizio */
+}
+
+.carousel-image:first-child {
+    display: block; /* Mostra la prima immagine all'inizio */
+}

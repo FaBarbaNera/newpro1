@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensioni - Lido Barbanera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menù</a></li>
+                <li><a href="ordina.html">Ordina dall'Ombrellone</a></li>
+                <li><a href="ombrelloni.html">Ombrelloni</a></li>
+                <li><a href="recensioni.html">Recensioni</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recensioni">
+                        <!-- Logo sopra il titolo -->
+        <img src="images/logo.PNG" alt="Logo Lido Barbanera" id="logo">
+
+            <h1>Le Nostre Recensioni</h1>
+            <div class="review-container">
+                <div class="review" id="review-1">
+                    <p class="review-text">"Un'esperienza fantastica! Cibo freschissimo e un servizio impeccabile. Tornerò sicuramente!"</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-author">Giulia R.</p>
+                </div>
+                <div class="review" id="review-2">
+                    <p class="review-text">"Spiaggia stupenda, ombrelloni comodi e servizio di ordinazione via WhatsApp molto pratico. Top!"</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-author">Marco B.</p>
+                </div>
+                <div class="review" id="review-3">
+                    <p class="review-text">"Consiglio vivamente! La qualità del pesce è eccellente e la vista è spettacolare!"</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-author">Laura P.</p>
+                </div>
+                <div class="review" id="review-4">
+                    <p class="review-text">"Servizio veloce e cortese, un'ottima scelta per chi cerca relax e buon cibo in spiaggia."</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-author">Giorgio M.</p>
+                </div>
+            </div>
+            
+        
+            <button class="review-button" onclick="window.open('https://www.google.it/search?sca_esv=3252dbeceb57d81a&hl=it&gl=it&cs=1&q=Barbanera&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7s9-wtOarM-KY_wX6y4WEImFlu9Ex2J5u8oeW30EErVGhkDsN5oFLxdX3vt3sd-93gsHud0%3D&uds=ADvngMjKG8C2ZvFSOylXTIOGrf1iMbsefvOMEM1zlF1qurlwoUiBwNFe_AR21kAzhm-mo154fBF24kqNY7XWBJKZRdNhTce9MRg8dqTNoS_0h9ODvcmwvzo&sa=X&ved=2ahUKEwjz7OzKoPiKAxV69LsIHZhoMQgQ3PALegQIGxAE&biw=1325&bih=1070&dpr=2', '_blank')">Vedi altre recensioni</button>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lido Barbanera | Tutti i diritti riservati</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        let currentReview = 0;
+        const reviews = document.querySelectorAll('.review');
+        const totalReviews = reviews.length;
+
+        function showReview() {
+            // Nascondi tutte le recensioni
+            reviews.forEach((review, index) => {
+                review.style.display = 'none';
+            });
+
+            // Mostra la recensione corrente
+            reviews[currentReview].style.display = 'block';
+
+            // Passa alla prossima recensione
+            currentReview = (currentReview + 1) % totalReviews;
+        }
+
+        // Inizializza il primo ciclo di recensioni
+        showReview();
+        setInterval(showReview, 5000); // Cambia recensione ogni 5 secondi
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menù - Lido Barbanera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="javascript:void(0);" onclick="openPopup()">Menù</a></li> <!-- Link che apre il popup -->
+                <li><a href="ordina.html">Ordina dall'Ombrellone</a></li>
+                <li><a href="ombrelloni.html">Ombrelloni</a></li>
+                <li><a href="recensioni.html">Recensioni</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu-intro">
+            <!-- Logo sopra il titolo -->
+            <img src="images/logo.PNG" alt="Logo Lido Barbanera" id="logo">
+            <h1>Benvenuto al Ristorante Barbanera!</h1>
+            
+            <!-- Link che apre il popup -->
+            <a href="javascript:void(0);" onclick="openPopup()" class="cta-btn">Scopri il Menù</a>
+            <p>Vieni a scoprire il miglior ristorante di pesce sulla spiaggia! </p>
+        
+        </section>
+
+        
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lido Barbanera | Tutti i diritti riservati</p>
+    </footer>
+
+    <!-- Script per aprire il popup -->
+    <script>
+        function openPopup() {
+            window.open('https://web.popup.lol/dalboss', '_blank', 'width=800,height=600'); // Apre il link in un popup
+        }
+    </script>
+</body>
+</html>

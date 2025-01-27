@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Icona per dispositivi Apple -->
+<link rel="apple-touch-icon" href="/images/icon-192x192.png">
+<!-- Icona per Android -->
+<link rel="icon" type="image/png" sizes="192x192" href="/images/icon-192x192.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lido Barbanera - Il tuo ristorante di pesce sulla spiaggia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menù</a></li>
+                <li><a href="ordina.html">Ordina dall'Ombrellone</a></li>
+                <li><a href="ombrelloni.html">Ombrelloni</a></li>
+                <li><a href="recensioni.html">Recensioni</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+             <!-- Logo sopra il titolo -->
+             <div class="logo">
+                <img src="images/logo.PNG" alt="Logo Lido Barbanera" />
+            </div>
+            <h1>Benvenuto al Lido Barbanera!</h1>
+            <p>Vieni a scoprire il miglior ristorante di pesce sulla spiaggia! Oppure ordina direttamente al bar dal tuo ombrellone e goditi la vista.</p>
+            <a href="menu.html" class="cta-btn">Scopri il Menù</a>
+        </section>
+         <!-- Sezione con le immagini che cambiano -->
+         <section id="review-container"> <!-- Qui usiamo review-container per coerenza -->
+            <div class="review-container">
+                <img src="images/pesce1.jpg" alt="Pesce fresco" class="carousel-image" id="carousel-img-1">
+                <img src="images/pesce2.jpg" alt="Pesce grigliato" class="carousel-image" id="carousel-img-2">
+                <img src="images/pesce3.jpg" alt="Piatti tipici" class="carousel-image" id="carousel-img-3">
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Perché scegliere noi?</h2>
+            <div class="feature">
+                <h3>Piatti freschi e locali</h3>
+                <p>Il miglior pesce fresco del mare direttamente sulla tua tavola.</p>
+            </div>
+            <div class="feature">
+                <h3>Servizio in spiaggia</h3>
+                <p>Ordina dal tuo ombrellone senza muoverti!</p>
+            </div>
+            <div class="feature">
+                <h3>Recensioni eccellenti</h3>
+                <p>Scopri cosa dicono i nostri clienti felici!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lido Barbanera | Tutti i diritti riservati</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
