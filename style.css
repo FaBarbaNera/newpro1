@@ -110,6 +110,7 @@ footer {
     header nav ul {
         flex-direction: column;
         gap: 15px;
+        margin-left: 20px;
     }
 
     #intro h1 {
