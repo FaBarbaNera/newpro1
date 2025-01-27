@@ -138,6 +138,8 @@ footer {
         width: 95%;  /* Aumenta la larghezza del contenitore sui dispositivi mobili */
         height: 300px;  /* Modifica l'altezza per adattarla meglio su schermi più piccoli */
         padding: 20px;  /* Riduci un po' il padding per risparmiare spazio */
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .carousel-image {
