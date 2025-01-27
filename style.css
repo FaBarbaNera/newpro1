@@ -718,8 +718,8 @@ footer {
 }
 
 .carousel-image {
-    width: 90%;  /* Ogni immagine occupa tutta la larghezza disponibile */
-    height: 90%;  /* Ogni immagine occupa tutta l'altezza disponibile */
+    width: 100%;  /* Ogni immagine occupa tutta la larghezza disponibile */
+    height: 100%;  /* Ogni immagine occupa tutta l'altezza disponibile */
     object-fit: cover;  /* Mantieni il rapporto di aspetto e riempi il contenitore senza distorcere */
     display: none;  /* Nascondi tutte le immagini inizialmente */
 }
@@ -727,6 +727,7 @@ footer {
 .carousel-image:first-child {
     display: block;  /* Mostra la prima immagine all'inizio */
 }
+
 
 
 
