@@ -144,46 +144,6 @@ footer {
         width: 100%;  /* Le immagini si adattano alla larghezza del contenitore */
         height: 100%;  /* Le immagini occupano tutta l'altezza disponibile */
     }
-/* Centra e ridimensiona il contenitore principale */
-    #bar-menu {
-        padding: 10px;               /* Riduce il padding per adattarsi meglio agli schermi piccoli */
-        width: 100%;                 /* Rende il contenitore a larghezza completa */
-    }
-
-    /* Titolo della categoria */
-    .menu-category h2 {
-        font-size: 2em;              /* Riduce la dimensione del titolo principale */
-    }
-
-    /* Titoli degli articoli (h3) */
-    .menu-category h3 {
-        font-size: 4vw;              /* Imposta la dimensione dinamica del font in base alla larghezza */
-    }
-
-    /* Descrizione degli articoli (p) */
-    .menu-category p {
-        font-size: 1.1rem;           /* Riduce la dimensione del testo descrittivo */
-        width: 90%;                  /* Imposta una larghezza maggiore per le descrizioni */
-    }
-
-    /* Lista degli articoli (ul) */
-    .menu-category ul {
-        max-width: 100%;             /* Imposta la lista a larghezza piena */
-        padding: 0 10px;             /* Aggiunge un po' di padding laterale per schermi piccoli */
-    }
-
-    /* Ogni elemento della lista (li) */
-    .menu-category li {
-        padding: 8px 0;              /* Riduce il padding per adattarsi agli schermi piccoli */
-        font-size: 1rem;             /* Riduce la dimensione del testo per ogni voce */
-    }
-
-    /* Prezzo degli articoli */
-    .menu-category .price {
-        font-size: 1rem;             /* Riduce la dimensione del font del prezzo */
-        text-align: center;          /* Allinea il prezzo al centro per gli schermi piccoli */
-        margin-top: 10px;            /* Aggiunge un po' di spazio sopra il prezzo */
-    }
 }
 
 
@@ -213,7 +173,7 @@ footer {
 }
 
 .menu-category h2 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: #0077b6; /* Blu mare */
     margin-bottom: 20px;
 }
@@ -222,24 +182,33 @@ footer {
     list-style: none;
 }
 
+/* Modifica il padding e margine della lista (li) per ridurre gli spazi */
 .menu-category li {
-    margin-bottom: 20px;
+    padding: 8px 0;              /* Riduce il padding verticale per ogni elemento */
+    font-size: 1rem;             /* Mantiene una dimensione del testo ragionevole */
+    border-bottom: 1px solid #ccc;
 }
 
 .menu-category h3 {
-    font-size: 1.8em;
+    font-size: 1.4em;            /* Modifica per rendere il testo del titolo più piccolo */
+    margin: 5px 0;    
     color: #0077b6;
 }
 
 .menu-category p {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 0.9rem;           /* Riduce ulteriormente la dimensione del testo */
+    width: 90%;                  /* Mantiene una larghezza decente per le descrizioni */
+    margin: 5px auto;            /* Riduce lo spazio verticale tra il nome e la descrizione */
+    line-height: 1.3;            /* Riduce lo spazio tra le righe */
 }
+
 
 .price {
     font-weight: bold;
     color: #ffcc00; /* Giallo sabbia */
-    font-size: 1.2em;
+    font-size: 1.2rem;           /* Riduce la dimensione del prezzo */
+    text-align: right;           /* Mantiene il prezzo a destra */
+    margin-top: 5px;  
 }
 
 #order-now {
