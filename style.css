@@ -752,3 +752,56 @@ header nav a::before {
     color: #ffcc00;  /* Colore del puntino */
 }
 
+/* Centra il contenitore del menu */
+#bar-menu {
+    display: flex;
+    justify-content: center;  /* Allinea al centro orizzontalmente */
+    align-items: center;      /* Allinea al centro verticalmente */
+    flex-direction: column;   /* Ordina gli elementi verticalmente */
+    padding: 20px;            /* Aggiunge un po' di padding */
+    width: 100%;              /* Occupa tutta la larghezza */
+}
+
+/* Allinea il testo a centro e regola la larghezza del titolo */
+.menu-category h3 {
+    font-size: 1.8em;            /* Dimensione del testo */
+    color: #0077b6;              /* Colore blu */
+    font-weight: bold;           /* Grassetto */
+    text-align: center;          /* Centra il testo orizzontalmente */
+    width: 80%;                  /* Imposta la larghezza al 80% della larghezza del contenitore */
+    max-width: 600px;            /* La larghezza massima per non farlo diventare troppo largo */
+    margin: 10px auto;           /* Aggiunge un po' di spazio sopra e sotto il titolo, e centra orizzontalmente */
+    line-height: 1.4;            /* Aumenta la spaziatura tra le righe (utile per titoli più lunghi) */
+}
+
+/* Stile per il contenitore della lista (aggiustato per essere responsive) */
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;            /* Imposta una larghezza massima per la lista */
+    margin: 0 auto;              /* Centra la lista orizzontalmente */
+}
+
+/* Ogni elemento della lista (li) */
+.menu-category li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; /* Linea sotto ogni elemento */
+}
+
+/* Allineare i prezzi a destra */
+.menu-category .price {
+    text-align: right;
+    font-weight: bold;
+    color: #0077b6;
+    margin-top: 5px;
+}
+.menu-category h2 {
+    font-size: 2.5em;
+    color: #0077b6;
+    text-align: center;
+}
+.menu-category p {
+    text-align: center;  /* Centra il testo delle descrizioni */
+    margin: 10px 0;  /* Distanza tra le righe */
+}
