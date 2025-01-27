@@ -736,18 +736,3 @@ header nav a::before {
     font-size: 2em;  /* Imposta la dimensione del puntino */
     color: #ffcc00;  /* Colore del puntino */
 }
-/* Sezione generica per gli elenchi */
-.menu-category ul li::before {
-    content: '•';  /* Puntino */
-    margin-right: 10px; /* Distanza tra il puntino e il testo */
-    color: #0077b6;  /* Colore del puntino */
-    font-size: 2em;  /* Dimensione del puntino */
-}
-
-/* Assicurati che sui dispositivi mobili il puntino sia visibile */
-@media (max-width: 768px) {
-    .menu-category ul li::before {
-        content: '•'; /* Ripristina il puntino su mobile */
-        font-size: 1.5em; /* Puoi ridurre la dimensione del puntino se necessario */
-    }
-}
