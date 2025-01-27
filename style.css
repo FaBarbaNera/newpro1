@@ -184,6 +184,15 @@ footer {
     margin-top: 20px;
 }
 
+/* Alternativa con classi specifiche */
+.menu-text {
+    color: #ffb300; /* Colore per il primo paragrafo */
+}
+
+.discount-text {
+    color: #ff0000; /* Colore per il secondo paragrafo */
+}
+
 
 .menu-category {
     width: 30%;
@@ -324,6 +333,23 @@ footer {
     text-decoration: none;
     border-radius: 25px;
 }
+/* Centrare il tasto all'interno del contenitore */
+#order-details {
+    text-align: center; /* Centra tutti gli elementi figli (incluso il tasto) */
+}
+
+#whatsapp-button {
+    display: inline-block; /* Rende il tasto inline-block per centrarlo correttamente */
+    background-color: #25D366; /* Verde WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;  /* Aggiungi un po' di spazio sopra il bottone */
+}
+
 
 #whatsapp-button:hover {
     background-color: #128c7e; /* Colore WhatsApp scuro */
@@ -369,6 +395,66 @@ footer {
     text-align: center;
     margin-bottom: 40px;
 }
+.sconto-text {
+    color: #ff0000; /* Cambia questo con il colore che preferisci */
+    font-weight: bold; /* Se vuoi, puoi anche rendere il testo in grassetto */
+}
+
+
+/* Modifica l'aspetto dell'input per il numero ombrellone */
+#ombrellone-number {
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    max-width: 300px; /* Limita la larghezza massima */
+    padding: 10px; /* Aggiungi padding per il testo */
+    font-size: 16px; /* Aumenta la dimensione del testo */
+    border: 2px solid #ccc; /* Bordo grigio chiaro */
+    border-radius: 5px; /* Angoli arrotondati */
+    background-color: #f9f9f9; /* Colore di sfondo chiaro */
+    transition: all 0.3s ease; /* Transizione per un effetto fluido quando cambia */
+}
+
+/* Modifica del bordo quando l'input è attivo (focus) */
+#ombrellone-number:focus {
+    border-color: #007bff; /* Bordo blu quando selezionato */
+    background-color: #e6f7ff; /* Colore di sfondo chiaro quando in focus */
+    outline: none; /* Rimuove la bordatura predefinita */
+}
+
+/* Placeholder (testo indicativo all'interno dell'input) */
+#ombrellone-number::placeholder {
+    color: #888; /* Colore del testo del placeholder */
+    font-style: italic; /* Rendilo in corsivo */
+}
+/* Aggiungi spazio sopra il testo del paragrafo */
+.whatsapp-info {
+    margin-top: 20px;  /* Distanza tra l'input e il testo */
+    font-size: 14px;   /* Dimensione del testo */
+    color: #333;       /* Colore del testo (puoi scegliere il colore che preferisci) */
+    text-align: center; /* Centra il testo orizzontalmente */
+    font-style: italic;  /* Puoi anche aggiungere il corsivo */
+    padding: 10px 0;   /* Distanza interna tra il testo e il bordo */
+    background-color: #f0f0f0; /* Colore di sfondo chiaro per evidenziare il testo */
+    border-radius: 5px;  /* Angoli arrotondati per il background */
+}
+
+/* Se vuoi personalizzare il tasto WhatsApp */
+#whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;  /* Verde tipico di WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;  /* Aggiungi un po' di spazio sopra il bottone */
+}
+
+#whatsapp-button:hover {
+    background-color: #128C7E; /* Colore verde scuro quando si passa sopra */
+    transition: background-color 0.3s ease;
+}
+
 
 #ombrelloni-intro h1 {
     font-size: 2.5em;
@@ -637,7 +723,7 @@ footer {
 /* Stile per il testo di introduzione */
 #intro h1 {
     font-size: 2.8em;
-    color: ##ffcc00; /* Blu mare */
+    color: #ffcc00; /* Blu mare */
     text-align: center;
     margin-bottom: 20px; /* Spazio sotto il titolo */
 }
